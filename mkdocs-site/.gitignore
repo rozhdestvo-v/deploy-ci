@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+.venv-mkdocs/
+.venv-pelican/
+.venv-quarto/
+.venv-sphinx/
+
+# MkDocs build output and cache
+site/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# VS Code
+.vscode/

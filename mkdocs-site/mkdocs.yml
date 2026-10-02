@@ -1,0 +1,45 @@
+site_name: "Сравнение генераторов статических сайтов"
+site_description: "Тестовый стенд для задания T1"
+site_author: Владислав Рождественский
+site_url: https://rozhdestvo-v.github.io/deploy-ci/
+repo_url: https://github.com/rozhdestvo-v/deploy-ci
+repo_name: rozhdestvo-v/deploy-ci
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Главная: index.md
+  - Эксперимент: experiment.md
+  - Ноутбук: notebook.ipynb
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+  - mkdocs-jupyter:
+      execute: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
